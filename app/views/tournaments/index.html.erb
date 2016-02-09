@@ -6,13 +6,15 @@
     <span class="glyphicon glyphicon-plus"></span>
     Add a tournament
   </button>
+
+
 </div>
 
 <%= form_tag({}, { :class => "tourney-form hidden", "data-hook" => "tourney-form" }) do %>
   <div class="form-group">
     <label for="tournament_name">Tournament name:</label>
     <input type="text" name="tournament[name]" id="tournament_name"
-      class="form-control">
+      class="form-control">  
   </div>
 
   <div data-hook="form-alerts"></div>
@@ -23,3 +25,4 @@
 <% end %>
 
 <section class="js-tourney-section"></section>
+
